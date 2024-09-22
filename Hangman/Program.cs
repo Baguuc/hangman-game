@@ -18,7 +18,7 @@
         int randomCharIndex = random.Next(0, randomWord.Length);
         char randomChar = randomWord[randomCharIndex];
 
-        this.correctWord = randomWord;
+        this.correctWord = randomWord.Trim();
         this.visibleChar = randomChar;
     }
 
