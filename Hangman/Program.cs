@@ -3,14 +3,14 @@
     string[] words;
     string correctWord;
     HashSet<char> correctWords;
-    HashSet<char> wrongWords;
+    HashSet<char> wrongChars;
     char visibleChar;
 
     public Game(string wordListPath)
     {
         this.words = File.ReadAllText(wordListPath).Split('\n');
         this.correctWords = new HashSet<char>();
-        this.wrongWords = new HashSet<char>();
+        this.wrongChars = new HashSet<char>();
 
         Random random = new Random();
         int randomWordIndex = random.Next(0, words.Length - 1);
@@ -44,7 +44,7 @@
 
     public string GetAttemptCountString()
     {
-        return "Attempts left: " + (6 - this.wrongWords.Count);
+        return "Attempts left: " + (6 - this.wrongChars.Count);
     }
 
 
@@ -58,7 +58,7 @@
         }
         concatinated += "\n✘";
 
-        foreach (char c in this.wrongWords)
+        foreach (char c in this.wrongChars)
         {
             concatinated += "\u0336" + c + " ";
         }
