@@ -1,0 +1,14 @@
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\bin\Debug\net8.0\Hangman.exe
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\bin\Debug\net8.0\Hangman.deps.json
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\bin\Debug\net8.0\Hangman.runtimeconfig.json
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\bin\Debug\net8.0\Hangman.dll
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\bin\Debug\net8.0\Hangman.pdb
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.AssemblyInfoInputs.cache
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.AssemblyInfo.cs
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.dll
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\refint\Hangman.dll
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.pdb
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\Hangman.genruntimeconfig.cache
+C:\Users\janzu\OneDrive\Code\DotNet\hangman\Hangman\obj\Debug\net8.0\ref\Hangman.dll

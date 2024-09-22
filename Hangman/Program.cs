@@ -48,15 +48,22 @@
     }
 
 
-    public string GetCorrectCharsString()
+    public string GetGuessesString()
     {
-        string concatinated = "Guessed: ";
+        string concatinated = "✔";
 
         foreach (char c in this.correctWords)
         {
             concatinated += c + " ";
         }
+        concatinated += "\n✘";
+
+        foreach (char c in this.wrongWords)
+        {
+            concatinated += "\u0336" + c + " ";
+        }
 
         return concatinated;
     }
+
 }

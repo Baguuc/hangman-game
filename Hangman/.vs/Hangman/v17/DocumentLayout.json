@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{33728D7B-EB51-4FCF-BC15-5E7CF27DF700}|Hangman.csproj|c:\\users\\janzu\\onedrive\\code\\dotnet\\hangman\\hangman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33728D7B-EB51-4FCF-BC15-5E7CF27DF700}|Hangman.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\janzu\\AppData\\Local\\Temp\\b41ae1f0-cdc6-443b-bc9c-6915d1d55a33_2024-09-22.zip.a33\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +17,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\janzu\\AppData\\Local\\Temp\\b41ae1f0-cdc6-443b-bc9c-6915d1d55a33_2024-09-22.zip.a33\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\b41ae1f0-cdc6-443b-bc9c-6915d1d55a33_2024-09-22.zip.a33\\Program.cs",
+              "ToolTip": "C:\\Users\\janzu\\AppData\\Local\\Temp\\b41ae1f0-cdc6-443b-bc9c-6915d1d55a33_2024-09-22.zip.a33\\Program.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\b41ae1f0-cdc6-443b-bc9c-6915d1d55a33_2024-09-22.zip.a33\\Program.cs [Read Only]",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T14:53:42.945Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
@@ -28,7 +44,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\janzu\\OneDrive\\Code\\DotNet\\hangman\\Hangman\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T14:53:20.217Z",
               "EditorCaption": ""
