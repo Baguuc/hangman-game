@@ -46,4 +46,17 @@
     {
         return "Attempts left: " + (6 - this.wrongWords.Count);
     }
+
+
+    public string GetCorrectCharsString()
+    {
+        string concatinated = "Guessed: ";
+
+        foreach (char c in this.correctWords)
+        {
+            concatinated += c + " ";
+        }
+
+        return concatinated;
+    }
 }
