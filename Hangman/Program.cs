@@ -40,4 +40,10 @@
 
         return concatinated;
     }
+
+
+    public string GetAttemptCountString()
+    {
+        return "Attempts left: " + (6 - this.wrongWords.Count);
+    }
 }
