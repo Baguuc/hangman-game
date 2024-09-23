@@ -110,4 +110,9 @@
 
         return true;
     }
+    
+    public bool IsGameLost()
+    {
+        return this.wrongChars.Count() >= 6;
+    }
 }
