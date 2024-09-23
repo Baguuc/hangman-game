@@ -1,4 +1,14 @@
-﻿class Game
+﻿public class Program
+{
+    public static void Main(string[] args)
+    {
+        Game game = new Game("E:\\words.txt");
+        game.GameLoop();
+    }
+}
+
+
+class Game
 {
     string[] words;
     string correctWord;
@@ -24,6 +34,24 @@
 
         running = true;
     }
+    
+    public void GameLoop()
+    {
+        while (this.running)
+        {
+            Console.Clear();
+
+            if (this.IsGameWon() || this.IsGameLost())
+            {
+                this.EndGame();
+            }
+
+            Console.WriteLine(this.GetStateString());
+            char input = this.ReadInput();
+            this.ValidateInput(input);
+        }
+    }
+
 
     public string GetWordHidden()
     {
@@ -130,6 +158,41 @@
     
     public bool ValidateInput(char input)
     {
+        char[] allowedChars = {
+            'q',
+            'w',
+            'e',
+            'r',
+            't',
+            'y',
+            'u',
+            'i',
+            'o',
+            'p',
+            'a',
+            's',
+            'd',
+            'f',
+            'g',
+            'h',
+            'j',
+            'k',
+            'l',
+            'z',
+            'x',
+            'c',
+            'v',
+            'b',
+            'n',
+            'm'
+        };
+
+
+        if (!allowedChars.Contains(input))
+        {
+            return false;
+        }
+
         if(this.correctChars.Contains(input))
         {
             return true; 
