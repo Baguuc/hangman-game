@@ -5,6 +5,7 @@
     HashSet<char> correctChars;
     HashSet<char> wrongChars;
     char visibleChar;
+    bool running;
 
     public Game(string wordListPath)
     {
@@ -20,6 +21,8 @@
 
         this.correctWord = randomWord.Trim();
         this.visibleChar = randomChar;
+
+        running = true;
     }
 
     public string GetWordHidden()
@@ -146,6 +149,21 @@
         {
             this.wrongChars.Add(input);
             return false;
+        }
+    }
+
+
+    public void EndGame()
+    {
+        this.running = false;
+        Console.WriteLine("The word was: " + this.correctWord);
+
+        if (this.IsGameWon())
+        {
+            Console.WriteLine("Congratulations! You won!");
+        } else
+        {
+            Console.WriteLine("You lost! Better luck next time!");
         }
     }
 }
