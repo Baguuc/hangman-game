@@ -50,17 +50,38 @@
 
     public string GetGuessesString()
     {
-        string concatinated = "✔";
+        // GET ✓ CHAR WITH ESCAPED GREEN COLOR
+        string concatinated = "\x1b[32m✓\x1b[37m ";
+        int correctCharsCount = this.correctWords.Count();
+        int wrongCharsCount = this.wrongChars.Count();
 
-        foreach (char c in this.correctWords)
+
+        if (correctCharsCount == 0)
         {
-            concatinated += c + " ";
+            concatinated += "(0): -";
+        } else
+        {
+            concatinated += " (" + correctCharsCount + "): ";
+            foreach (char c in this.correctWords)
+            {
+                concatinated += c + " ";
+            }
         }
-        concatinated += "\n✘";
+        
+        concatinated += "\n";
+        // GET ✗ CHAR WITH ESCAPED RED COLOR
+        concatinated += "\x1b[31m✗\x1b[37m ";
 
-        foreach (char c in this.wrongChars)
+        if (wrongCharsCount == 0)
         {
-            concatinated += "\u0336" + c + " ";
+            concatinated += "(0): -";
+        } else
+        {
+            concatinated += " (" + wrongCharsCount + "): ";
+            foreach (char c in this.wrongChars)
+            {
+                concatinated += c + " ";
+            }
         }
 
         return concatinated;
