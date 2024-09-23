@@ -47,7 +47,7 @@
         return "Attempts left: " + (6 - this.wrongChars.Count);
     }
 
-
+    
     public string GetGuessesString()
     {
         // GET ✓ CHAR WITH ESCAPED GREEN COLOR
@@ -122,5 +122,30 @@
         char input = Console.ReadKey().KeyChar;
 
         return input;
+    }
+
+    
+    public bool ValidateInput(char input)
+    {
+        if(this.correctChars.Contains(input))
+        {
+            return true; 
+        }
+
+        if (this.wrongChars.Contains(input))
+        {
+            return false;
+        }
+
+        if (this.correctWord.Contains(input))
+        {
+            this.correctChars.Add(input);
+            return true;
+        }
+        else
+        {
+            this.wrongChars.Add(input);
+            return false;
+        }
     }
 }
