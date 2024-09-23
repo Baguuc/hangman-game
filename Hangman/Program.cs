@@ -26,11 +26,12 @@ class Game
         Random random = new Random();
         int randomWordIndex = random.Next(0, words.Length - 1);
         string randomWord = words[randomWordIndex];
-        int randomCharIndex = random.Next(0, randomWord.Length);
+        int randomCharIndex = random.Next(0, randomWord.Length - 1);
         char randomChar = randomWord[randomCharIndex];
 
         this.correctWord = randomWord.Trim();
         this.visibleChar = randomChar;
+        correctChars.Add(randomChar);
 
         running = true;
     }
