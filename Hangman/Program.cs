@@ -165,5 +165,10 @@
         {
             Console.WriteLine("You lost! Better luck next time!");
         }
+
+
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey(); // it can be ANY key so we don't need to store it or validate it
+        Environment.Exit(0);
     }
 }
