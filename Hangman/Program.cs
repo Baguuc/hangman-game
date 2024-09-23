@@ -2,14 +2,14 @@
 {
     string[] words;
     string correctWord;
-    HashSet<char> correctWords;
+    HashSet<char> correctChars;
     HashSet<char> wrongChars;
     char visibleChar;
 
     public Game(string wordListPath)
     {
         this.words = File.ReadAllText(wordListPath).Split('\n');
-        this.correctWords = new HashSet<char>();
+        this.correctChars = new HashSet<char>();
         this.wrongChars = new HashSet<char>();
 
         Random random = new Random();
@@ -28,7 +28,7 @@
 
         foreach (char c in this.correctWord)
         {
-            if (c == this.visibleChar || this.correctWords.Contains(c))
+            if (c == this.visibleChar || this.correctChars.Contains(c))
             {
                 concatinated += c + " ";
             }
@@ -52,7 +52,7 @@
     {
         // GET ✓ CHAR WITH ESCAPED GREEN COLOR
         string concatinated = "\x1b[32m✓\x1b[37m ";
-        int correctCharsCount = this.correctWords.Count();
+        int correctCharsCount = this.correctChars.Count();
         int wrongCharsCount = this.wrongChars.Count();
 
 
@@ -62,7 +62,7 @@
         } else
         {
             concatinated += " (" + correctCharsCount + "): ";
-            foreach (char c in this.correctWords)
+            foreach (char c in this.correctChars)
             {
                 concatinated += c + " ";
             }
