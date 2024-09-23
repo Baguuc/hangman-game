@@ -87,4 +87,14 @@
         return concatinated;
     }
 
+
+    public string GetStateString()
+    {
+        string concatinated = "";
+        concatinated += GetWordHidden() + "\n";
+        concatinated += GetAttemptCountString() + "\n";
+        concatinated += GetGuessesString() + "\n";
+
+        return concatinated;
+    }
 }
