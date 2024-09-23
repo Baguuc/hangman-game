@@ -97,4 +97,17 @@
 
         return concatinated;
     }
+
+    public bool IsGameWon()
+    {
+        foreach (char c in this.correctWord)
+        {
+            if (!this.correctChars.Contains(c))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
