@@ -115,4 +115,12 @@
     {
         return this.wrongChars.Count() >= 6;
     }
+
+   
+    public char ReadInput()
+    {
+        char input = Console.ReadKey().KeyChar;
+
+        return input;
+    }
 }
